@@ -1,0 +1,437 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(236, 196, 131, 0.799);
+    
+}
+
+/*Navigation Bar*/
+header {
+    background-color: #000000;
+    color: white;
+    padding: 16px;
+    text-align: left;
+    margin: 10px;
+}
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration:none;
+    padding: 10px 10px;
+    margin: 0px 20px;
+    font-size: large;
+    font-weight: bold;
+    font-style: italic;
+}
+nav a:hover{
+    background-color: #ebaf0c;
+}
+.menu-title{
+    display:none;
+}
+/*Main content and Image*/
+
+.main-content{
+    display:grid;
+    grid-template-columns: 1fr 3fr; 
+    grid-template-rows: auto auto;   
+}
+.about-image{
+    grid-column: 1;
+    grid-row: 1;
+}
+.about-image img{
+    max-width: 150px;
+    margin-top: 10px;
+    padding-left: 80px;
+}
+.about-image p{
+    font-size: 40px;
+    font-style: none;
+    font-weight: bold;
+    padding-left: 28px;
+}
+.about{
+    grid-column: 2;
+    grid-row: 1;
+    padding: 20px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    margin: 10px;
+    padding-left: auto;
+    background-color: rgb(159, 239, 159);
+}
+.about p{
+    text-align: justify;
+}
+
+/*Publication section*/
+.publications {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+} 
+.publication-header h2{
+    margin-left:60px;
+    margin-top: 110px;
+    font-size: 30px;
+    text-decoration: underline;
+}
+.publication-header img{
+    width: 250px;
+    height: 300px;
+    padding-left: 40px;
+    margin-top:10px;
+}
+.publication {
+    border:2px solid #000;
+    background-color: lightpink;
+    border-radius: 6px;
+    margin:20px;
+}
+.publication-heading h3 {
+    margin:20px;
+}
+.publication-details p {
+    margin: 20px;    
+}
+.publication-details a{
+    display:block;
+    padding:10px 0;
+    text-align:center;
+    color:rgb(46, 6, 247);   
+    
+}
+.publication a:hover {
+    background-color: #97cc2e;
+}
+
+/*Awards section*/
+.awards {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: auto;
+}
+.awards-title-section, .awards-icon {
+    grid-column: 2;
+    grid-row: 1;
+    display: grid;
+    align-items: left;
+}
+.awards-title-section h2{
+    margin-left:180px;
+    margin-right:40px;
+    font-size: 30px;
+    text-decoration: underline;
+}
+.awards-icon img{
+    width: 130px;
+    height:125px;
+}
+.awards-icon{
+    
+    margin-top: 75px;
+    margin-right: 60px;
+    margin-left: 170px;
+}
+
+.awards-content {
+    grid-column: 1;
+    grid-row: 1;
+    padding: 20px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    margin-left: 40px;
+    padding-left: auto;
+    background-color: rgb(159, 239, 159);
+    /*text-align: center;*/
+}
+
+/* Innovation section*/
+.innovations {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: auto;
+}
+
+.innovations-title-section, .innovations-icon {
+    grid-column: 1;
+    grid-row: 1;
+    display: grid;
+    align-items: left;
+}
+
+.innovations-title-section h2 {
+    margin-left: 180px;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.innovations-icon img {
+    margin-top: 85px;
+    width: 130px;
+    height: 125px;
+    margin-left: 200px;
+}
+
+.innovations-content {
+    grid-column: 2;
+    grid-row: 1;
+    padding: 20px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-right: 20px;
+    padding-left: auto;
+    background-color: lightpink;
+}
+
+/*Blog section*/
+.blogs {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: auto;
+}
+
+.blogs-title-section, .blogs-icon {
+    grid-column: 2;
+    grid-row: 1;
+    display: grid;
+    align-items: left;
+}
+
+.blogs-title-section h2 {
+    margin-left: 200px;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.blogs-icon img {
+    margin-top: 85px;
+    width: 130px;
+    height: 125px;
+    margin-left: 180px;
+}
+
+.blogs-content {
+    grid-column: 1;
+    grid-row: 1;
+    padding: 20px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    margin: 40px;
+    padding-left: auto;
+    background-color: rgb(159, 239, 159);
+}
+
+/*Quote Section*/
+.quotes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+}
+
+.quote {
+    padding: 20px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    background-color: rgba(199, 21, 239, 0.708);
+    margin: 20px;
+}
+.quote:hover{
+    background-color: coral;
+    color: white;
+}
+
+.quote p {
+    margin: 0;
+    text-align: center;
+}
+
+
+/*Footer*/
+footer {
+    background-color: #333;
+    color: white;
+    padding: 8px;
+    text-align: center;
+}
+
+@media  screen and (max-width:700px) {
+    /*main content*/
+.main-content{
+    display: block;
+}
+
+/*about section*/
+.about-image img{
+    min-width: 200px;
+    height:220px;
+    margin-left: 100px;
+    margin-top:20px;
+    display: block;
+}
+.about-image p {
+    text-align: center;
+    font-size: 50px;
+}
+.about {
+    padding: 20px;
+    margin:20px;
+}
+
+/*Publication section*/
+.publications {
+    grid-template-columns: 1fr;
+}
+.publication-header h2 {
+    text-align: center;
+    margin-left: 0;
+    margin-top: 30px;
+    font-size: 30px;
+}
+.publication-header img {
+    width: 200px;
+    height:200px;
+    margin-left: 130px;
+    display: block;
+}
+.publication-details a {
+    text-align: center;
+}
+
+/*Awards section*/
+.awards {
+    display: block;
+}
+.awards-title-section h2 {
+    text-align: center;
+    margin: 20px 0;
+    text-decoration: underline;
+}
+.awards-icon img {
+    width: 150px;
+    height:150px;
+    margin-top: -70px;
+    margin-left: 26px;
+    margin-bottom: 20px;
+    display: block;
+}
+.awards-content {
+    padding: 20px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    margin: 20px;
+    margin-top:-5px;
+    background-color: palegreen;
+}
+.awards-content p {
+    margin: 10px 0;
+}
+
+/*Innovation section*/
+.innovations{
+    display: block;
+}
+.innovations-title-section h2 {
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 180px;
+    text-decoration: underline;
+}
+.innovations-icon img {
+    width: 150px;
+    height:150px;
+    margin-top: 10px;
+    margin-left: 190px;
+    margin-bottom: 20px;
+    display: block;
+}
+.innovations-content {
+    padding: 20px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    margin: 20px;
+    margin-top:-5px;
+    background-color: lightpink;
+}
+.innovations-content p {
+    margin: 10px 10px;
+}
+
+/*Blogs Section*/
+.blogs{
+    display: block;
+}
+.blogs-title-section h2 {
+    text-align: center;
+    margin-top: 10px;
+    margin-right:220px;
+    text-decoration: underline;
+}
+.blogs-icon img {
+    width: 150px;
+    height:150px;
+    margin-top: -3px;
+    margin-left: 180px;
+    margin-bottom: 20px;
+    display: block;
+}
+.blogs-content {
+    padding: 20px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    margin: 20px;
+    margin-top:-5px;
+    background-color: palegreen;
+}
+.awards-content p {
+    margin: 10px 0;
+}
+
+/*Responsive Menu*/
+.menu-items {
+    display: none;
+}
+.menu-toggle {
+    display: block;
+    cursor: pointer;
+}
+.bars {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bar {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+.menu-items a {
+    display: block;
+    padding: 10px;
+    margin: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #000000;
+}
+.menu-items.show {
+    display: block;
+}
+.menu-toggle {
+    display: flex; 
+    align-items: center;
+}
+.menu-title{
+    display: block;
+    margin-left:20px;
+    font-size:25px;
+    color:white;
+    text-align: center;
+}
+}
